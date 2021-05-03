@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cir_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_houtui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/houtui"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海阔天空"
+            android:layout_alignTop="@id/iv_houtui"
+            android:layout_toRightOf="@id/iv_houtui"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_song_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beyond"
+            android:layout_alignBottom="@id/iv_houtui"
+            android:layout_toRightOf="@id/iv_houtui"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/background_light">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/fenxiang"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp">
+        </ImageView>
+    </RelativeLayout>
+
+
+
+
+
+    <View
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/myView"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+    </View>
+
+
+    <RelativeLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/donwload"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/like">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/donwload"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/sing"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/donw">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/sing"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sing">
+        </ImageView>
+        <ImageView
+            android:id="@+id/pinlun"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sing"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pinlun">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/sing_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pinlun"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/sing_more">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="149dp">
+        <SeekBar
+            android:id="@+id/seekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="40dp">
+
+        </SeekBar>
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/iv_next1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/more">
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/iv_next1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="44dp"
+            android:layout_toRightOf="@+id/iv_play1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_play1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/play">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_last"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@id/iv_play1"
+            android:src="@drawable/last">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_rule1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@id/iv_last"
+            android:src="@drawable/xunhuan">
+        </ImageView>
+
+    </RelativeLayout>
+
+</LinearLayout>

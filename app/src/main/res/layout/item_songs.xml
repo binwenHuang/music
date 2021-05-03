@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">"
+    android:orientation="vertical">
+    <edu.cdp.music.view.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </edu.cdp.music.view.SwipeMenuLayout>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:text="光辉岁月"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/song_singer"
+        android:text="Byond"
+        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/song_time"
+        android:text="4:14"
+        android:layout_alignParentRight="true"
+        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+
+</RelativeLayout>

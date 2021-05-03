@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activity.LoadingActivity">
+
+    <!--    将默认的焦点点击取消-->
+    <LinearLayout android:layout_width="0px"
+        android:layout_height="0px" android:focusable="true"
+        android:focusableInTouchMode="true">
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp">
+    </ImageView>
+    <AutoCompleteTextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="请输入用户名/手机号/邮箱"
+        android:dropDownHorizontalOffset="40dp"
+        android:completionThreshold="1"
+        android:dropDownHeight="200dp"
+        android:padding="10dp"
+        android:textColor="@color/welcome_bg"
+        android:textSize="20dp"
+        android:background="@null"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDengluEdit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </View>
+
+    <EditText
+        android:id="@+id/edit_psw"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:password="true"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:textSize="20dp"
+        android:textColor="@color/welcome_bg"
+        android:background="@null"
+        android:padding="10dp"
+        android:textCursorDrawable="@drawable/cursor_color">
+<!--        最后一行用于控制光标颜色-->
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDengluEdit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/loading_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/loading_btn_bg"
+            android:layout_marginLeft="15dp"
+            android:text="登录"
+            android:textSize="27dp"
+            android:textColor="@color/welcome_bg">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/zhuce_tv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="新用户注册"
+            android:textSize="20dp"
+            android:textColor="@color/loading_btn_bg">
+        </TextView>
+
+        <TextView
+            android:id="@+id/psw_forget"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="忘记密码？"
+            android:textColor="@color/loading_btn_bg"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="100dp">
+
+        <CheckBox
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="290dp"
+            android:textColor="@color/loading_bg"
+            android:textSize="20dp"
+            android:text="我已认真阅读并同意"
+            >
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/tv_XY"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="290dp"
+            android:textColor="@color/loading_btn_bg"
+            android:textSize="20dp"
+            android:text="《服务条款》"
+            >
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

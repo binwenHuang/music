@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single" android:id="@+id/c1">
+        <item
+            android:id="@+id/nav_style"
+            android:icon="@drawable/user"
+            android:title="安全">
+        </item>
+        <item
+            android:id="@+id/nav_s"
+            android:icon="@drawable/user"
+            android:title="帮助">
+        </item>
+        <item
+            android:id="@+id/nav_sef"
+            android:icon="@drawable/user"
+            android:title="升级">
+        </item>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/c2">
+        <item
+            android:id="@+id/nav_sylea"
+            android:icon="@drawable/user"
+            android:title="切换账号">
+        </item>
+        <item
+            android:id="@+id/nav_swer"
+            android:icon="@drawable/user"
+            android:title="退出登录">
+        </item>
+
+    </group>
+</menu>

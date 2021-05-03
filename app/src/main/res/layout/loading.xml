@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:background="#A85A5A5A"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ProgressBar
+            android:id="@+id/pb_load"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:indeterminateDrawable="@drawable/progressbar"
+        android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+    android:id="@+id/tv_load_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="正在登录..."
+    android:textColor="@color/welcome_bg"
+    android:textSize="25dp"/>
+
+</LinearLayout>

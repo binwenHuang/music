@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_head_cp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海阔天空"
+            android:layout_alignTop="@id/iv_head_cp"
+            android:layout_toRightOf="@id/iv_head_cp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_song_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beyond"
+            android:layout_alignBottom="@id/iv_head_cp"
+            android:layout_toRightOf="@id/iv_head_cp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_next3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/next"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_more"
+            android:layout_marginRight="20dp">
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/iv_play3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/play"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_next3"
+            android:layout_marginRight="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_puse3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pause"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_play3"
+            android:layout_marginRight="20dp">
+        </ImageView>
+
+
+    </RelativeLayout>
+</LinearLayout>
